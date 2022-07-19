@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="">
+    <div class="leftnav">
+      <div class="dropdown">
+        <a id="features">Features<img src="./images/icon-arrow-down.svg" class="dropdownbtn"></a>
+        <div class="dropdown-content hide" id="fcontent">
+          <a href=""><img src="./images/icon-todo.svg" class="dropdownbtn">Todo List</a>
+          <a href=""><img src="./images/icon-calendar.svg" alt="">Calendar</a>
+          <a href=""><img src="./images/icon-reminders.svg" alt="">Reminders</a>
+          <a href=""><img src="./images/icon-planning.svg" alt="">Planning</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a id="company">Company<img src="./images/icon-arrow-down.svg" class="dropdownbtn"></a>
+        <div class="dropdown-content hide" id="ccontent">
+          <a>History</a>
+          <a>Our Team</a>
+          <a>Planning</a>
+        </div>
+      </div>
+
+      <a href="">Careers</a>
+      <a href="">About</a>
+
+
+
+    </div>
+    <div class="rightnav">
+      <a id="login">Login</a>
+      <a class="regis" id="register">Register</a>
+    </div>
+    <!-- Mobile -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="mdropdown">
+        <a id="mfeatures">Features<img src="./images/icon-arrow-down.svg" class="dropdownbtn"></a>
+        <div class="dropdown-content hide" id="mfcontent">
+          <a><img src="./images/icon-todo.svg" class="dropdownbtn">Todo List</a>
+          <a><img src="./images/icon-calendar.svg" alt="">Calendar</a>
+          <a><img src="./images/icon-reminders.svg" alt="">Reminders</a>
+          <a><img src="./images/icon-planning.svg" alt="">Planning</a>
+        </div>
+      </div>
+      <div class="mdropdown">
+        <a id="mcompany">Company<img src="./images/icon-arrow-down.svg" class="dropdownbtn"></a>
+        <div class="dropdown-content hide" id="mccontent">
+          <a>History</a>
+          <a>Our Team</a>
+          <a>Planning</a>
+        </div>
+      </div>
+
+      <a id="career">Careers</a>
+      <a id="about">About</a>
+      <div class="form">
+        <a id="login">Login</a>
+        <a class="regis" id="mregister">Register</a>
+      </div>
+
+    </div>
+
+    <div class="mrightnav">
+      <img src="./images/icon-menu.svg" onclick="openNav()">
+    </div>
+  </header>
+  <div class="container">
+    <div class="leftcontent">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar. </p>
+
+      <div class="learnbtn">
+        <button>Learn more</button>
+      </div>
+
+      <div class="client">
+        <img src="./images/client-databiz.svg" alt="">
+        <img src="./images/client-audiophile.svg" alt="">
+        <img src="./images/client-meet.svg" alt="">
+        <img src="./images/client-maker.svg" alt="">
+      </div>
+    </div>
+    <div class="rightcontent">
+      <img src="./images/image-hero-desktop.png" alt="" class="deskhero">
+      <img src="./images/image-hero-mobile.png" alt="" class="mobilehero">
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Konton Hongthong</a>.
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
